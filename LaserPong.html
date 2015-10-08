@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<title>Laser Pong</title>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="ISO-8859-1" />
+	<script type="text/javascript" src="LaserPong.js">
+	/*load the libraries*/
+	</script>
+	<style type="text/css">
+	.racket{
+		position: absolute;
+		height:150px;
+		width:20px;
+		background-color: #00FF00;
+		z-index: 1;
+	}
+	.greenlaser{
+		position: absolute;
+		height:2px;
+		width: 20px;
+		background-color: #00FF00;
+		z-index: -1;
+	}
+	.redlaser{
+		position: absolute;
+		height:2px;
+		width: 20px;
+		background-color: #FF0000;
+		z-index: 0;
+	}
+	</style>
+	<noscript> hay que joderse </noscript>
+</head>	
+<body bgcolor="black" onkeydown="start(event)" onkeyup="stop(event)">
+	<div class="racket" name="Racket0" id="Racket0" style="left:100px;"></div>
+	<div class="racket" name="Racket1" id="Racket1"></div>
+	<b>
+		<div id='Data0' style='position:absolute; left:10px; z-index:2;'>
+			<font id='Score0' color='#0000ff'></font>
+			<br>
+			<font id='Redmunition0' color='#ff0000'></font>
+		</div>
+		<div id='Data1' style='position:absolute; z-index:2;'>
+			<font id='Score1' color='#0000ff'></font>
+			<br>
+			<font id='Redmunition1' color='#ff0000'></font>
+		</div>
+	</b>
+	<img  src="ball.png" name="Ball" id="Ball" style="position:absolute;">
+	<script type="text/javascript">
+		begin();
+	</script>
+</body>
+</html>
